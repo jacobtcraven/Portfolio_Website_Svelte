@@ -1,4 +1,3 @@
-/* src/styles/global.css */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import './fonts.css'; /* Import the Poppins classes */
 
@@ -7,4 +6,60 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+}
+
+/* Background image style for the navbar and main section */
+html, body {
+    background: url('/../images/IMG_6227.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire area */
+}
+
+/* Navbar container */
+nav {
+    display: flex;
+    justify-content: center; /* Center everything (logo + links) horizontally */
+    align-items: center; /* Vertically align items in the center */
+    padding: 1rem 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; /* Ensure the navbar background is transparent */
+}
+
+/* Container for logo and links */
+.nav-content {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Adds space between the logo and the links */
+}
+
+/* Logo styling */
+.logo {
+    height: 50px; /* Adjust based on your logo size */
+    margin-right: 30px; /* Increased space between the logo and links */
+}
+
+/* Navbar list */
+nav ul {
+    list-style: none; /* Removes bullet points */
+    display: flex; /* Displays list items horizontally */
+    gap: 1.5rem; /* Adds space between each link */
+    padding: 0;
+    margin: 0;
+}
+
+/* Style for each link */
+nav a {
+    color: black; /* Change link text color to black */
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    padding: 0.5rem 1rem;
+    background: transparent;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Optional hover effect */
+    border-radius: 5px;
 }
